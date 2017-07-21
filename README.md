@@ -1,2 +1,7 @@
-# novi-plugin-material-parallax
-novi-plugin-material-parallax
+# novi-plugin-background-image
+
+## Install
+
+```
+--save novi-plugin-background-image
+```
