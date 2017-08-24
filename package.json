@@ -1,6 +1,6 @@
 {
   "name": "@novi_dev/novi-plugin-material-parallax ",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Novi background image plugin",
   "main": "dist/novi-plugin-background-image.js",
   "repository": {
