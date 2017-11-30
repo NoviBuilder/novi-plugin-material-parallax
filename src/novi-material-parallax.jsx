@@ -2,14 +2,14 @@ const React = novi.react.React;
 import * as ExcerptFunction from "./ExcerptFunction";
 import Editor from "./Editor";
 import Settings from "./Settings";
-
+const Language = novi.language;
 const Plugin = {
     name: "novi-plugin-material-parallax",
     title: "Novi Material Parallax Plugin",
     description: "Novi Material Parallax Plugin description",
-    version: "1.0.2",
+    version: "1.0.3",
     dependencies: {
-        novi: "0.8.4"
+        novi: "0.8.6"
     },
     defaults: {
         querySelector: '.parallax-container'
@@ -18,7 +18,13 @@ const Plugin = {
         editor: [Editor],
         settings: <Settings />,
     },
-    excerpt : ExcerptFunction.isValidParallax
+    excerpt : ExcerptFunction.isValidParallax,
+    onLanguageChange: onLanguageChange
 };
-
+function onLanguageChange(plugin){
+    let messages = Language.getDataByKey("novi-plugin-material-parallax");
+    plugin.ui.editor[0].title = messages.editor.title;
+    plugin.ui.editor[0].tooltip = messages.editor.tooltip;
+    return plugin;
+}
 novi.plugins.register(Plugin);

@@ -2,12 +2,12 @@ const React = novi.react.React;
 const Icon = novi.ui.icon;
 const Icons = novi.ui.icons;
 const Types = novi.types;
-
+const messages = novi.language.getDataByKey("novi-plugin-material-parallax");
 const EditorItem = {
     trigger: <Icon>{Icons.ICON_BG_IMAGE}</Icon>,
-    tooltip: "Replace Background Image",
+    tooltip: messages.editor.tooltip,
     closeIcon: "submit",
-    title: "Replace Background Image",
+    title: messages.editor.title,
     onTriggerClick: onClick
 };
 
