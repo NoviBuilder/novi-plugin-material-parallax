@@ -7,9 +7,9 @@ const Plugin = {
     name: "novi-plugin-material-parallax",
     title: "Novi Material Parallax Plugin",
     description: "Novi Material Parallax Plugin description",
-    version: "1.0.3",
+    version: "1.0.4",
     dependencies: {
-        novi: "0.8.6"
+        novi: "0.9.0"
     },
     defaults: {
         querySelector: '.parallax-container'
